@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div(style='text-align:center')
+    h1 Print Godex EZPL commands from Javascript
+    hr
+    label.checkbox
+      input#useDefaultPrinter(type='checkbox')
+      strong Print to Default printer
+    p or...
+    #installedPrinters
+      label(for='installedPrinterName') Select an installed Printer:
+      select#installedPrinterName(name='installedPrinterName')
+    br
+    br
+    button(type='button' onclick='print();') Print Now...

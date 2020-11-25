@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/zip.js')
+    script(src='/javascripts/zip-ext.js')
+    script(src='/javascripts/deflate.js')
+    script(src='/javascripts/JSPrintManager.js')
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js')
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
+  body
+    block content
+    script(src='/javascripts/main.js')
